@@ -15,7 +15,7 @@ angular.module('moviesApp')
     // Public API here
     return {
       alumniPayroll: function(serviceFee,year){
-      //added logic
+      //added logic point where u add ur logic/argument
       return serviceFee*1000;
       }
     };

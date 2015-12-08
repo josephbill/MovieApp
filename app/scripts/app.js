@@ -34,6 +34,11 @@ angular
         controller: 'PayrollCtrl',
         controllerAs: 'payroll'
       })
+      .when('/addMovie', {
+        templateUrl: 'views/addmovie.html',
+        controller: 'AddmovieCtrl',
+        controllerAs: 'addMovie'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -8,6 +8,7 @@
  * Controller of the moviesApp
  */
 angular.module('moviesApp')
+//parse new factory,service to the function parentheses ...in the code below the function parentheses is where u passs methods required
   .controller('PayrollCtrl', function ($scope,payrollService,payrollFactory) {
      //frist we create a service 
      //we inject the service payrollService.js

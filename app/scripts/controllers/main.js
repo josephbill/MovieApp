@@ -8,10 +8,6 @@
  * Controller of the moviesApp
  */
 angular.module('moviesApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope,MyFactory) {
+      $scope.movies=MyFactory.query();
   });
