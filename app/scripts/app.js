@@ -39,6 +39,18 @@ angular
         controller: 'AddmovieCtrl',
         controllerAs: 'addMovie'
       })
+
+
+      .when('/viewMovies/:_id', {
+        templateUrl: 'views/viewmovies.html',
+        controller: 'ViewmoviesCtrl',
+        controllerAs: 'viewMovies'
+      })
+      .when('/editMovie/:_id', {
+        templateUrl: 'views/editmovie.html',
+        controller: 'EditmovieCtrl',
+        controllerAs: 'editMovie'
+      })
       .otherwise({
         redirectTo: '/'
       });
